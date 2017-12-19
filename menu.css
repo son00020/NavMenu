@@ -4,8 +4,11 @@ Update ALL the named colours to create a monochromatic scheme
 Style the menus - one horizontally and one vertically
 Add the hover/active effects to your menu items
 ***************************************************/
-            
-            {
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+         
+             {
                 padding: 0;
                 margin: 0;
                 box-sizing: border-box;
@@ -15,26 +18,29 @@ Add the hover/active effects to your menu items
                 font-size: 16px;
                 line-height: 1.6;
                 /* ADD the Google sans-serif font to this font stack */
-                font-family: 'Gloria Hallelujah', Ranchers, 'Permanent Marker', sans-serif;
+                
             }
             
-            html
+            
             body {
                 background-color: #9FAFFF;
             }
             
             h1 {
                 font-size: 6.854rem;
+                font-family: 'Limelight', cursive;
                 /* ADD the Google serif font to this font stack */
-                font-family: Lobster, Ranchers, 'Shadows Into Light', serif;
-                padding: 1rem 2rem;
+               
             }
             
             h2 {
-                font-size: 4.23rem;
+                font-size: 5.00rem;
+                 text-align: center;
                 /* ADD the Google serif font to this font stack */
-                font-family: Lobster, Ranchers, 'Shadows Into Light', serif;
-                padding: 1rem 2rem;
+                
+                font-family: 'Crimson Text', serif;
+                
+                    
             }
             
             nav li {
@@ -44,7 +50,7 @@ Add the hover/active effects to your menu items
             p {
                 font-size: 1.618rem;
                 padding: 1rem 2rem;
-                font-family: Lobster, Ranchers, 'Shadows Into Light', serif;
+                font-family: 'Oswald', sans-serif;
             }
             
             .wrapper {
@@ -61,9 +67,9 @@ Add the hover/active effects to your menu items
                 color: #4F587F;
             }
             
-            .menu-h     {
+            .menu-h {
                 width: 100%;
-                background: red;
+                
             }
             
             .menu-h li {
@@ -73,10 +79,11 @@ Add the hover/active effects to your menu items
                 list-style: none;
                 float: left;
                 text-align: center;
-                width: 20%;
+                width: 18%;
                 border-left: 1px solid #333;
                 line-height: 1.2;
-                border-bottom: 1px solid #333;
+                border-bottom: 3px solid #333;
+                margin-bottom: 3rem;
             }
             
             .menu-h a,
@@ -97,20 +104,21 @@ Add the hover/active effects to your menu items
                     background-color: #5270FF;
                 }
                 .menu-v {
-                    width: 20%;
-                    float: left;
-                    padding: 150px;
+                    width: 18%;
+                    float: none;
+                                       
                 }
                 .menu-v li {
                     list-style: none;
+                    float: left;
                     text-align: center;
-                    width: 100%;
-                    text-align: center;
+                    width: 120%;
+                   
                     line-height: 1.2;
-                    border-bottom: 1px solid #333;
-                    border-right: 1px solid #333;
-                    border-left: 1px solid #333;
-                    background-color: #5270FF;
+                    border-right: 1rem;
+                    color: #333;
+
+                    
                     /* style the list items to remove the bullets 
         and line up vertically
         and take up 100% of the width of the ul */
@@ -122,8 +130,10 @@ Add the hover/active effects to your menu items
                     display: block;
                     text-decoration: none;
                     cursor: pointer;
-                    color: #7F5E6B;
+                    color: ##333;
                     border: 1rem solid transparent;
+                    float: none;
+                    clear: inherit;
                     /* style the anchors to fill the entire width of the li */
                 }
                 .menu-v a:hover,
@@ -135,9 +145,37 @@ Add the hover/active effects to your menu items
                     font-variant-caps: all-petite-caps;
                 }
                 main {
-                    width: 80%;
-                    float: right;
+                    width: 100%;
+                    float: inherit;
+                    clear: inherit;
                 }
                 footer {
                     clear: both;
                 }
+.loading {
+    display: none;
+}
+
+
+@media screen and (min-width:850px){
+    .attribution{
+        margin-top: 35%;
+    }
+    
+    #search-input {
+    font-size: 1rem;
+}
+@media screen and (min-width:1200px){
+	.movie{width:50%;
+	float: left;}
+    .page{
+        margin: 6rem 11rem;
+    }
+    #search-input{
+        width: 70%;
+    }
+    .attribution{
+        margin-top: 25%;
+    }
+}
+	
